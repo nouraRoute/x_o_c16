@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       routes: {
-        InitialScreen.routeName: (context) => InitialScreen(),
-        GameScreen.routeName: (context) => GameScreen(),
+        InitialScreen.routeName: (context) => const InitialScreen(),
+        GameScreen.routeName: (context) => const GameScreen(),
       },
       initialRoute: InitialScreen.routeName,
       theme: ThemeData(
