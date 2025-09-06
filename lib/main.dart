@@ -10,12 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       routes: {
         InitialScreen.routeName: (context) => const InitialScreen(),
         GameScreen.routeName: (context) => const GameScreen(),
@@ -25,7 +23,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.mainColor,
           primary: AppColors.mainColor,
-          secondary: AppColors.secColor,
         ),
         useMaterial3: true,
       ),
